@@ -9,7 +9,7 @@
 <body>
 
     <h1>Benvenuto<?php if (isset($_SESSION)){
-            echo " " . $_SESSION['email'];
+            echo " " . $_SESSION['mail'];
             }
             ?>!
     </h1>
@@ -19,7 +19,7 @@
             <input type="password" name="pwd"><br/>
             <input type="submit" name="login" >
         </form>
-    <div>Se non sei registrato, <a href="./signup.html">clicca qui per farlo</a></div>
+    <div>Se non sei registrato, <a href="./signup.php">clicca qui per farlo</a></div>
     <div></div>
     
     <?php if (isset($_COOKIE['message'])){

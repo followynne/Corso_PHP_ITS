@@ -12,6 +12,9 @@
             <input type="password" name="pwd"><br/>
             <input type="submit" name="signup">
     </form>
-    
+    <?php if (isset($_COOKIE['notValidate'])){
+        echo "<h6> " . $_COOKIE['notValidate'] . "</h6>";
+        }
+    ?>
 </body>
 </html>
