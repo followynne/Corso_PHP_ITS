@@ -1,0 +1,2 @@
+a:3:{s:9:"PHPSESSID";s:26:"s18fvekj8rlr2nb24bkp1kr64u";s:5:"email";s:12:"Ciao@difo.it";s:3:"pwd";s:60:"$2y$10$k9JayuEgZYJysCPlokoEDOLUveg/cp5IUCLK6BSsXwGihmyq6ZxV2";}
+a:3:{s:9:"PHPSESSID";s:26:"s18fvekj8rlr2nb24bkp1kr64u";s:5:"email";s:12:"Ciao@difo.it";s:3:"pwd";s:60:"$2y$10$W.0Gt2y27kGRQaSWbd5Q7OgUHd1V6EAYAyOD82qOkpLd7/CZvS3jG";}
