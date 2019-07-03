@@ -1,4 +1,5 @@
 <?php
+session_set_cookie_params(3600);
 session_start();
 $post = $_POST;
 $dsn = 'mysql:dbname=utenti_php;host=127.0.0.1';

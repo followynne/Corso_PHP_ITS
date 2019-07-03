@@ -1,4 +1,5 @@
 <?php
+session_set_cookie_params(3600);
 session_start();
 $post = $_POST;
 $dsn = 'mysql:dbname=utenti_php;host=127.0.0.1';
@@ -28,9 +29,7 @@ if (!$dataToCheck){
     if (password_verify($post['pwd'], $dataToCheck['pwd'])){
         http_response_code(200);
         $_SESSION['mail'] = $post['mail'];
-        setcookie('fico', $value= $_SESSION['mail']);
-
-        //$_SESSION['pwd'] = $post['pwd'];
+        $_SESSION['pwd'] = $post['pwd'];
         setcookie('message', $value= "");
         header("Location: ../index.php");
         exit;
