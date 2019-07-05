@@ -3,7 +3,7 @@ session_start();
 $post = $_POST;
 
 
-if (filter_var($post['mail'], FILTER_VALIDATE_EMAIL) && strlen($post['pwd'])>8){ 
+if (filter_var($post['mail'], FILTER_VALIDATE_EMAIL) && strlen($post['pwd'])>5){ 
     $dati['PHPSESSID'] = $_COOKIE['PHPSESSID'];   
     $dati['email'] = $post["mail"];
     $pwd = password_hash($post['pwd'], PASSWORD_DEFAULT);
