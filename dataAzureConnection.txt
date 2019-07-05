@@ -1,0 +1,13 @@
+
+1. configuri il service nb warning: pricing tier
+
+2. access key
+
+Computer Vision (catalogue azure) ---> create instance
+								---> name, subscription (addebitato), location(datacenter)
+								--> price tier (ci dovrebbe essere un free tier)
+
+key: ne abbiamo 2, perché se bisogna rinnovare nel tempo una k ne abbiamo pronta
+una nel frattempo per poterla sfruttare mentre si cambia l'altra
+
+o sdk o chiamate dirette rest
