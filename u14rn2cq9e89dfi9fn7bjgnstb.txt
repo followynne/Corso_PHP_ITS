@@ -1,1 +1,0 @@
-a:2:{s:5:"email";s:0:"";s:3:"pwd";s:60:"$2y$10$nvM4y.zSEkdOWbMPOw9.sum.WrEjPDk6iVukLVLdXau1jhBKbw5kG";}
