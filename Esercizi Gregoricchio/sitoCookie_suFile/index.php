@@ -11,8 +11,8 @@ session_start();?>
 </head>
 <body>
 
-<h1>Benvenuto<?php if (isset($_SESSION['mail'])){
-            $test = $_SESSION['mail'];
+<h1>Benvenuto<?php if (isset($_SESSION['email'])){
+            $test = $_SESSION['email'];
             echo(" " . $test);
             }
             ?>!
@@ -27,9 +27,9 @@ session_start();?>
     <div>Se non sei registrato, <a href="./signup.php">clicca qui per farlo</a></div>
     <div></div>');} else {
         echo('<a href = "logout.php"><input type="button" value="Log Out" name="logout"></input></a>');
-    } 
+    }
     ?>
-    
+
     <?php if (isset($_COOKIE['message'])){
             echo "<h6> " . $_COOKIE['message'] . "</h6>";
             }

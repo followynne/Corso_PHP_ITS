@@ -1,0 +1,1 @@
+a:3:{s:9:"PHPSESSID";s:26:"nrsml6gs1lnp9j3h4c8frvhf54";s:5:"email";s:15:"matteo.g@lib.it";s:3:"pwd";s:60:"$2y$10$eSLsSZdfDSmDDr91kqVcp.AR9Z/P.PP/MFjWM/8Gr6PAVaNjP9dla";}

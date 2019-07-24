@@ -2,16 +2,17 @@
 session_set_cookie_params(3600);
 session_start();
 $post = $_POST;
-$dsn = 'mysql:dbname=utenti_php;host=127.0.0.1';
+# host=127.0.0.1 for Windows_Sys
+$dsn = 'mysql:dbname=utenti_php;host=localhost';
 $user = 'root';
 $password = '';
 
-if (filter_var($post['mail'], FILTER_VALIDATE_EMAIL) && strlen($post['pwd'])>5){ 
-    $dati['PHPSESSID'] = $_COOKIE['PHPSESSID'];   
+if (filter_var($post['mail'], FILTER_VALIDATE_EMAIL) && strlen($post['pwd'])>5){
+    $dati['PHPSESSID'] = $_COOKIE['PHPSESSID'];
     $dati['email'] = $post["mail"];
     $pwd = password_hash($post['pwd'], PASSWORD_DEFAULT);
     $dati['pwd'] = $pwd;
-    
+
     $sql = 'insert into user_data values (:user, :pwd);';
     $sql2 = 'select * from user_data;';
     try{
@@ -35,7 +36,7 @@ if (filter_var($post['mail'], FILTER_VALIDATE_EMAIL) && strlen($post['pwd'])>5){
     } catch (PDOException $e){
         setcookie('notValidate', $value="Errore di connessione al database.");
         header("Location: ../signup.php", true, 401);
-        exit;        
+        exit;
     }
 
     setcookie('message', $value="Account creato. :).");

@@ -26,15 +26,6 @@ CREATE TABLE `user_data` (
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-/*Data for the table `user_data` */
-
-insert  into `user_data`(`username`,`pwd`) values 
-('Ciao@difo.ipp','$2y$10$nSJ0ymcg0Nbigz67WxeXFeBQUbbKmR5pzRXLNq2H67k'),
-('Ciao@difo.it','$2y$10$7FqTduvVK02wM/WCchx/8.6jmMg3x6m/BUIbxZ70LG1'),
-('marco@de.it','$2y$10$vr4HyGF8grFVkjAjM5lOaeruKSnjgs676w4sbn4bZVO'),
-('marco@deo.it','$2y$10$hZcRAZzDb.jMIiYpwwG2gOCL5uVi6W6wzwmuoas56z0'),
-('test@test.it','$2y$10$YoROiDXuJeQpZjZcrqlk7.XozesMRicxcNP4bdpayubozsmKcK/Vu');
-
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
