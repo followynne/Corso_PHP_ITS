@@ -1,0 +1,6 @@
+{
+    "name": "matteo/sito-articoli",
+    "require": {
+        "league/plates": "^3.3"
+    }
+}
