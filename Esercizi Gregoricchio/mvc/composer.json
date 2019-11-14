@@ -1,0 +1,16 @@
+{
+    "require": {
+        "league/plates": "^3.3",
+        "php-di/php-di": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleMVC\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SimpleMVC\\Test\\": "test/"
+        }
+    }
+}
